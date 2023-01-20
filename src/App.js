@@ -9,7 +9,7 @@ import { useState } from "react";
 
 // components
 
-import NavBar from "./components/Navbar";
+import NavBar from "./components/Navbar/Navbar";
 
 // pages
 import HomePage from "./pages/Home/HomePage";
@@ -21,7 +21,7 @@ const router = createBrowserRouter(
     <Route path="/" element={<NavBar />}>
       <Route index element={<HomePage />} />
       <Route path="cv" element={<CVPage />} />
-      <Route path="projects/" element={<ProjectPage />} />
+      <Route path="projects" element={<ProjectPage />} />
     </Route>
   )
 );
@@ -29,9 +29,7 @@ const router = createBrowserRouter(
 function App() {
   return (
     <div className="app">
-      <div>
-        <RouterProvider router={router} />
-      </div>
+      <RouterProvider router={router} />
     </div>
   );
 }
