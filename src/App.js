@@ -5,8 +5,6 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-import { useState } from "react";
-
 // components
 
 import NavBar from "./components/Navbar/Navbar";
