@@ -1,3 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*before,
+*::after {
+  box-sizing: inherit;
+}
+
 @font-face {
   font-family: "Body";
   src: url(fonts/BodyText-LargeBold.ttf);
@@ -17,11 +31,6 @@
   src: url(fonts/PaulGrotesk-Bold-Trail.otf);
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
 .Home-Page {
   background: linear-gradient(
     90deg,
@@ -30,7 +39,7 @@
   );
 
   width: 100%;
-  height: 100%;
+  height: 80%;
   position: fixed;
   left: 0;
   z-index: 100; /* Just to keep it at the very top */
@@ -45,7 +54,7 @@
 .landingcoloumn {
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: flex-start;
 }
 h1.fullstack {
   font-family: "sequel-sans";
@@ -66,6 +75,19 @@ h1.fullstack {
   position: relative;
   margin-left: 10.55%;
   margin-top: 2.6%;
+}
+
+.landingpfp {
+  width: 350px !important;
+  position: fixed;
+  top: 26%;
+  right: 27%;
+  height: 350px;
+  border: 10px solid;
+  border-width: 5px;
+  border-image-slice: 1;
+  border-width: 7px;
+  border-image-source: linear-gradient(to right, #333 45%, #1b6bff);
 }
 
 /* PDF CV IMPORT */
