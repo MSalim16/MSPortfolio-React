@@ -16,6 +16,27 @@ const NavBar = () => {
             <NavLink exact activeClassName="active" to="Projects">
               Projects
             </NavLink>
+            <div className="external-links">
+              <a
+                class="github"
+                href="https://github.com/MSalim16"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Github"
+              >
+                Github
+              </a>
+
+              <a
+                class="LinkedIn"
+                href="https://www.linkedin.com/in/mohamed-salim-23741a247/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="LinkedIn"
+              >
+                LinkedIn
+              </a>
+            </div>
           </div>
         </nav>
       </header>
