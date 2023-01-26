@@ -128,7 +128,7 @@ function HomePage() {
         </div>
       </section>
       <section className="three">
-        <h1>my Tech Stack</h1>
+        <h1>About</h1>
       </section>
 
       <section className="four">

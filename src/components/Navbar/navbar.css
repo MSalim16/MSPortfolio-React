@@ -41,6 +41,9 @@
 }
 
 .external-links {
-  position: fixed;
+  float: right;
   right: 0;
+}
+
+@media (max-width: 415px) {
 }
