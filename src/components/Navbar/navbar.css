@@ -2,7 +2,7 @@
 .nav-bar {
   background-color: #333;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   overflow: hidden;
   border-style: solid;
   border-color: white;

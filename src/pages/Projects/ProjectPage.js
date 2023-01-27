@@ -1,13 +1,18 @@
 import React from "react";
 import Footer from "../../components/Footer/Footer";
+import "../Projects/projects.css";
 
 const ProjectPage = () => {
   return (
     <>
-      <div style={{ color: "black" }}>
-        <h1> hi from projects</h1>
+      <div className="project-page" style={{ color: "black" }}>
+        <section>
+          <h1> hi from projects</h1>
+        </section>
       </div>
-      <Footer />
+      <div className="footer">
+        <Footer />
+      </div>
     </>
   );
 };
