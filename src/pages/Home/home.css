@@ -14,7 +14,6 @@
 
   width: 100%;
   height: 75%;
-  left: 0;
 }
 section {
   width: 100%;
@@ -26,7 +25,7 @@ section {
   scroll-snap-align: start;
 }
 .two {
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
 }
 
 ::-webkit-scrollbar {
@@ -89,7 +88,7 @@ p {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 100px;
+  grid-column-gap: 60px;
   grid-row-gap: 50px;
 }
 
@@ -143,8 +142,82 @@ p {
   scale: 110%;
 }
 
-h1 {
-  font-size: 150px;
+.three {
+  background-color: #1b6bff;
+  width: 100%;
+  height: 92%;
+}
+
+.aboutme {
+  color: rgb(255, 255, 255);
+  font-size: 70px;
+  font-family: "sequel-sans";
+  font-weight: 900;
+  line-height: 80px;
+  text-align: left;
+}
+.about {
+  display: flex;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  position: relative;
+  font-size: 17px;
+  margin-right: 60%;
+  font-weight: 500;
+}
+
+.about-container {
+  display: flex;
+  margin-left: 8%;
+  margin-top: 6%;
+  flex-direction: column;
+}
+
+.footer-page {
+  background-color: rgb(0, 16, 68);
+  width: 100%;
+  height: 100%;
+}
+
+.footer-container {
+  margin-left: 8%;
+  margin-top: 15%;
+  margin-right: 8%;
+}
+
+.links {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom-footer {
+  margin-top: 15%;
+  border: 0;
+  height: 3px;
+  background: rgb(255, 255, 255);
+}
+
+a {
+  color: #1b6bff;
+}
+
+.footer-redirects {
+  line-height: 3em;
+}
+
+.contact {
+  float: right;
+  color: white;
+  line-height: 3em;
+}
+
+.createdby {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 0.5rem;
 }
 
 @media (max-width: 1650px) {
@@ -377,17 +450,10 @@ h1 {
     color: #1b6bff;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    font-size: 15px;
+    font-size: 12px;
   }
 }
 
-.htimg {
-  width: 4rem;
-}
-
-.ggithub {
-  width: 4rem;
-}
 @media (max-width: 550px) {
   .skills-container {
     display: grid;

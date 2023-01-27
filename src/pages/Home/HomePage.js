@@ -11,7 +11,9 @@ import TypeScript from "../../tech/typescript.png";
 import JEST from "../../tech/jest.png";
 import EXPRESS from "../../tech/express.png";
 import VSCODE from "../../tech/vscode.png";
-import PHOTOSHOP from "../../tech/photoshop.png";
+import TRELLO from "../../tech/trello.png";
+
+import Footer from "../../components/footer";
 
 import { useEffect } from "react";
 
@@ -121,18 +123,61 @@ function HomePage() {
               <p className="ht">VS CODE</p>
             </div>
             <div className="box">
-              <img className="htimg" src={PHOTOSHOP} alt="PHOTOSHOP icon" />
-              <p className="ht">PHOTOSHOP</p>
+              <img className="htimg" src={TRELLO} alt="TRELLO icon" />
+              <p className="ht">TRELLO</p>
             </div>
           </div>
         </div>
       </section>
       <section className="three">
-        <h1>About</h1>
+        <div className="about-container">
+          <h1 className="aboutme">About Me</h1>
+          <p className="about">
+            As a results-driven software engineering professional with a passion
+            for both building secure web and mobile applications as well as
+            computer hardware, I am confident in my ability to contribute to a
+            dynamic and high-performing team. My strong background in software
+            engineering, coupled with my love for computer building and
+            hardware, has equipped me with the skills necessary to tackle
+            complex business problems and effectively communicate with senior
+            management. I am excited about the opportunity to apply my skills
+            and experience to a new software engineering role, where I can
+            continue to grow and develop as a professional while indulging my
+            passion for technology.
+            <br></br>
+            <br></br>
+            As a current student at the Northcoders in Manchester, I am pursuing
+            a comprehensive education in software development. Through a 14-week
+            intensive bootcamp, I am honing my skills in various programming
+            languages such as JavaScript/TypeScript, HTML, and CSS.
+            Additionally, I am gaining a solid understanding of back-end
+            development principles including Test-Driven Development, Pair
+            Programming, and MVC principles. <br></br>
+            <br></br>I am also honing my skills in database management, working
+            with PostgreSQL, MongoDB, and learning about database seeding,
+            testing, and deployment. Additionally, I am learning front-end
+            principles such as ReactJS, the Document Object Model, app design
+            and planning, optimistic rendering, and hosting. <br></br>
+            <br></br>
+            In addition to my coursework, I have also demonstrated my abilities
+            through several practical projects. These include a group project,
+            where we developed a phone application utilizing FireBase,
+            TypeScript and React Native, as well as a full-stack solo project,
+            which consisted of a backend JavaScript API and a React/CSS
+            frontend. Furthermore, I have also developed a noughts and crosses
+            game utilizing vanilla JavaScript, CSS, and HTML. Through these
+            projects, I have been able to apply the concepts learned in class to
+            real-world scenarios and have developed my skills in a professional
+            manner. <br></br>
+            <br></br>
+            Furthermore, I am also learning about DevOps, including continuous
+            deployment, continuous integration, and workflows with GitHub.
+          </p>
+        </div>
       </section>
 
       <section className="four">
-        <h1>Footer</h1>
+        <Footer />
       </section>
     </div>
   );
