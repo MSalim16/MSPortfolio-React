@@ -173,6 +173,10 @@ p {
   flex-direction: column;
 }
 
+.bottom-links {
+  max-width: 10rem;
+}
+
 @media (max-width: 1650px) {
   .skills-container {
     display: grid;

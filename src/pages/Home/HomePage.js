@@ -11,7 +11,8 @@ import TypeScript from "../../tech/typescript.png";
 import JEST from "../../tech/jest.png";
 import EXPRESS from "../../tech/express.png";
 import VSCODE from "../../tech/vscode.png";
-import TRELLO from "../../tech/trello.png";
+import AGILE from "../../tech/agile.png";
+import TDD from "../../tech/tdd.png";
 
 import Footer from "../../components/Footer/Footer";
 
@@ -88,11 +89,6 @@ function HomePage() {
             </div>
 
             <div className="box">
-              <img className="htimg" src={Mongo} alt="MONGO DB icon" />
-              <p className="ht">MONGO DB</p>
-            </div>
-
-            <div className="box">
               <img className="htimg" src={FireBase} alt="FIREBASE icon" />
               <p className="ht">FIREBASE</p>
             </div>
@@ -123,8 +119,12 @@ function HomePage() {
               <p className="ht">VS CODE</p>
             </div>
             <div className="box">
-              <img className="htimg" src={TRELLO} alt="TRELLO icon" />
-              <p className="ht">TRELLO</p>
+              <img className="htimg" src={AGILE} alt="Agile icon" />
+              <p className="ht">Agile Methodologies</p>
+            </div>
+            <div className="box">
+              <img className="htimg" src={TDD} alt="TDD icon" />
+              <p className="ht">TDD</p>
             </div>
           </div>
         </div>
@@ -133,19 +133,6 @@ function HomePage() {
         <div className="about-container">
           <h1 className="aboutme">About Me</h1>
           <p className="about">
-            As a results-driven software engineering professional with a passion
-            for both building secure web and mobile applications as well as
-            computer hardware, I am confident in my ability to contribute to a
-            dynamic and high-performing team. My strong background in software
-            engineering, coupled with my love for computer building and
-            hardware, has equipped me with the skills necessary to tackle
-            complex business problems and effectively communicate with senior
-            management. I am excited about the opportunity to apply my skills
-            and experience to a new software engineering role, where I can
-            continue to grow and develop as a professional while indulging my
-            passion for technology.
-            <br></br>
-            <br></br>
             As a current student at the Northcoders in Manchester, I am pursuing
             a comprehensive education in software development. Through a 14-week
             intensive bootcamp, I am honing my skills in various programming
