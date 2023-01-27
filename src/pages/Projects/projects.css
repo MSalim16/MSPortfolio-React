@@ -3,3 +3,7 @@
   height: 100vh;
   margin-top: 25px;
 }
+
+.footer {
+  scroll-snap-align: start;
+}
