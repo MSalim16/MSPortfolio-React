@@ -13,7 +13,7 @@ import EXPRESS from "../../tech/express.png";
 import VSCODE from "../../tech/vscode.png";
 import TRELLO from "../../tech/trello.png";
 
-import Footer from "../../components/footer";
+import Footer from "../../components/Footer/Footer";
 
 import { useEffect } from "react";
 
