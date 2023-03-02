@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const CVPage = () => {
   const [CVURL] = useState(
-    "https://drive.google.com/file/d/1iEoS7IpkSiuPXRSyXPVGYdiSsZNJSZ_8/preview"
+    "https://drive.google.com/file/d/1YK7dvKcEnmBCJKfLBvIHud13Txjhbgyf/preview"
   );
 
   return (

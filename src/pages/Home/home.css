@@ -49,7 +49,7 @@ section {
   margin-top: 11.6%;
 }
 
-h1.fullstack {
+.fullstack {
   color: rgb(255, 255, 255);
   font-size: 70px;
   font-family: "sequel-sans";
@@ -150,7 +150,7 @@ p {
 
 .aboutme {
   color: rgb(255, 255, 255);
-  font-size: 70px;
+  font-size: 60px;
   font-family: "sequel-sans";
   font-weight: 900;
   line-height: 80px;
@@ -161,20 +161,26 @@ p {
   text-align: left;
   color: rgb(255, 255, 255);
   position: relative;
-  font-size: 17px;
-  margin-right: 60%;
+  font-size: 15px;
+  margin-right: 65%;
   font-weight: 500;
 }
 
 .about-container {
   display: flex;
   margin-left: 8%;
-  margin-top: 6%;
+  margin-top: 4%;
   flex-direction: column;
 }
 
 .bottom-links {
   max-width: 10rem;
+}
+
+.animated {
+  width: 600px;
+  position: relative;
+  margin-left: 50vw;
 }
 
 @media (max-width: 1650px) {
@@ -191,7 +197,7 @@ p {
     margin-top: 13%;
   }
 
-  h1.fullstack {
+  .fullstack {
     color: rgb(255, 255, 255);
     font-size: 60px;
     font-family: "sequel-sans";
@@ -354,6 +360,18 @@ p {
 }
 
 @media (max-width: 750px) {
+  .landingpfp {
+    width: 16rem !important;
+    top: -35%;
+    right: -58%;
+    height: 16rem;
+    border: 10px solid;
+    position: relative;
+    border-width: 5px;
+    border-image-slice: 1;
+    border-width: 7px;
+    border-image-source: linear-gradient(to right, #333 50%, #1b6bff);
+  }
   .skills-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -383,6 +401,18 @@ p {
 }
 
 @media (max-width: 650px) {
+  .landingpfp {
+    width: 14rem !important;
+    top: -35%;
+    right: -58%;
+    height: 14rem;
+    border: 10px solid;
+    position: relative;
+    border-width: 5px;
+    border-image-slice: 1;
+    border-width: 7px;
+    border-image-source: linear-gradient(to right, #333 50%, #1b6bff);
+  }
   .skills-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -412,6 +442,18 @@ p {
 }
 
 @media (max-width: 550px) {
+  .landingpfp {
+    width: 10rem !important;
+    top: -35%;
+    right: -58%;
+    height: 10rem;
+    border: 10px solid;
+    position: relative;
+    border-width: 5px;
+    border-image-slice: 1;
+    border-width: 7px;
+    border-image-source: linear-gradient(to right, #333 50%, #1b6bff);
+  }
   .skills-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -451,6 +493,21 @@ p {
 }
 
 @media (max-width: 400px) {
+  .fullstack {
+    font-size: 45px;
+  }
+  .landingpfp {
+    width: 8rem !important;
+    top: -35%;
+    right: -58%;
+    height: 8rem;
+    border: 10px solid;
+    position: relative;
+    border-width: 5px;
+    border-image-slice: 1;
+    border-width: 7px;
+    border-image-source: linear-gradient(to right, #333 50%, #1b6bff);
+  }
   .skills-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

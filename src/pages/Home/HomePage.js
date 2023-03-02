@@ -16,20 +16,31 @@ import TDD from "../../tech/tdd.png";
 
 import Footer from "../../components/Footer/Footer";
 
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 import "../Home/home.css";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+import Lottie from "lottie-web";
+
 const myface =
   "https://raw.githubusercontent.com/MSalim16/MSPortfolio-React/main/src/images/MSALIMPICTURE%20WORK.jpeg";
 
 function HomePage() {
+  const ref = useRef(null);
+
   useEffect(() => {
-    AOS.init({});
-  }, []);
+    const animation = Lottie.loadAnimation({
+      container: ref.current,
+      renderer: "svg",
+      loop: true,
+      autoplay: true,
+      path: "https://assets3.lottiefiles.com/private_files/lf30_obidsi0t.json",
+    });
+    return () => animation.destroy();
+  }, [ref]);
 
   return (
     <div className="wrapper">
@@ -133,33 +144,41 @@ function HomePage() {
         <div className="about-container">
           <h1 className="aboutme">About Me</h1>
           <p className="about">
-            As a current student at the Northcoders in Manchester, I am pursuing
-            a comprehensive education in software development. Through a 14-week
-            intensive bootcamp, I am honing my skills in various programming
-            languages such as JavaScript/TypeScript, HTML, and CSS.
-            Additionally, I am gaining a solid understanding of back-end
-            development principles including Test-Driven Development, Pair
-            Programming, and MVC principles. <br></br>
-            <br></br>I am also honing my skills in database management, working
-            with PostgreSQL, MongoDB, and learning about database seeding,
-            testing, and deployment. Additionally, I am learning front-end
-            principles such as ReactJS, the Document Object Model, app design
-            and planning, optimistic rendering, and hosting. <br></br>
-            <br></br>
-            In addition to my coursework, I have also demonstrated my abilities
+            Welcome to my portfolio! As a proud graduate of Northcoders in
+            Manchester, I have pursued a comprehensive education in software
+            development. My 14-week intensive bootcamp allowed me to hone my
+            skills in various programming languages such as
+            JavaScript/TypeScript, HTML, and CSS. Additionally, I gained a solid
+            understanding of back-end development principles including
+            Test-Driven Development, Pair Programming, and MVC principles.
+            <br></br> <br></br> I have also honed my skills in database
+            management, working with PostgreSQL, MongoDB, and learning about
+            database seeding, testing, and deployment. Additionally, I have
+            learned front-end principles such as ReactJS, the Document Object
+            Model, app design and planning, optimistic rendering, and hosting.
+            <br></br> <br></br>
+            In addition to my coursework, I have demonstrated my abilities
             through several practical projects. These include a group project,
             where we developed a phone application utilizing FireBase,
             TypeScript and React Native, as well as a full-stack solo project,
             which consisted of a backend JavaScript API and a React/CSS
             frontend. Furthermore, I have also developed a noughts and crosses
             game utilizing vanilla JavaScript, CSS, and HTML. Through these
-            projects, I have been able to apply the concepts learned in class to
-            real-world scenarios and have developed my skills in a professional
-            manner. <br></br>
-            <br></br>
-            Furthermore, I am also learning about DevOps, including continuous
-            deployment, continuous integration, and workflows with GitHub.
+            projects, I was able to apply network error in class to real-world
+            scenarios and develop my skills in a professional manner.<br></br>{" "}
+            <br></br> As a Northcoders graduate, I have also gained knowledge
+            about DevOps, including continuous deployment, continuous
+            integration, and workflows with GitHub. With a passion for creating
+            innovative and efficient software solutions, I am always seeking to
+            expand my skills and knowledge in the field of software development.
+            <br></br> <br></br>I am excited to showcase my portfolio and
+            highlight my projects, skills, and achievements. Thank you for
+            visiting my website and taking the time to learn more about my
+            journey as a software developer.
           </p>
+          <div className="animated">
+            <div ref={ref} alt="developer" />
+          </div>
         </div>
       </section>
 
