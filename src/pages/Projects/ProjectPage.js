@@ -1,5 +1,7 @@
 import React from "react";
+import ImgSlider from "../../components/ImgSlider/ImgSlider";
 import Footer from "../../components/Footer/Footer";
+
 import "../Projects/projects.css";
 
 const ProjectPage = () => {
@@ -7,11 +9,11 @@ const ProjectPage = () => {
     <>
       <div className="project-page" style={{ color: "black" }}>
         <section>
-          <h1> hi from projects</h1>
+          <ImgSlider />
         </section>
-      </div>
-      <div className="footer">
-        <Footer />
+        <section>
+          <Footer />
+        </section>
       </div>
     </>
   );
