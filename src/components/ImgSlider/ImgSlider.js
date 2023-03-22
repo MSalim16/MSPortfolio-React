@@ -16,9 +16,9 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
   {
-    label: "San Francisco – Oakland Bay Bridge, United States",
+    label: "Login Page with Firebase Auth",
     imgPath:
-      "https://images.unsplash.com/photo-1537944434965-cf4679d1a598?auto=format&fit=crop&w=400&h=250&q=60",
+      "https://github.com/MSalim16/MSPortfolio-React/blob/main/src/images/fuud1.jpg?raw=true",
   },
   {
     label: "Bird",
@@ -55,7 +55,7 @@ function ImgSlider() {
   };
 
   return (
-    <Box sx={{ maxWidth: 400, flexGrow: 1 }}>
+    <Box sx={{ maxHeight: 600, maxWidth: 300, flexGrow: 1 }}>
       <Paper
         square
         elevation={0}
@@ -67,7 +67,9 @@ function ImgSlider() {
           bgcolor: "background.default",
         }}
       >
-        <Typography>{images[activeStep].label}</Typography>
+        <Typography style={{ color: "#1b6bff", fontFamily: "PaulGrotesk" }}>
+          {images[activeStep].label}
+        </Typography>
       </Paper>
       <AutoPlaySwipeableViews
         axis={theme.direction === "rtl" ? "x-reverse" : "x"}
@@ -81,9 +83,9 @@ function ImgSlider() {
               <Box
                 component="img"
                 sx={{
-                  height: 255,
+                  height: 600,
                   display: "block",
-                  maxWidth: 400,
+                  maxWidth: 300,
                   overflow: "hidden",
                   width: "100%",
                 }}
@@ -104,7 +106,6 @@ function ImgSlider() {
             onClick={handleNext}
             disabled={activeStep === maxSteps - 1}
           >
-            Next
             {theme.direction === "rtl" ? (
               <KeyboardArrowLeft />
             ) : (
@@ -119,7 +120,6 @@ function ImgSlider() {
             ) : (
               <KeyboardArrowLeft />
             )}
-            Back
           </Button>
         }
       />
