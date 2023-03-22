@@ -17,25 +17,25 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 const images = [
   {
     project: "Fuud.",
-    label: "Login Page with Firebase Auth",
+    label: "Login page with create account / reset password features",
     imgPath:
       "https://github.com/MSalim16/MSPortfolio-React/blob/main/src/images/fuud1.png?raw=true",
   },
   {
     project: "Fuud.",
-    label: "Landing Page with Pantry and Waste",
+    label: "Landing page with pantry and waste",
     imgPath:
       "https://github.com/MSalim16/MSPortfolio-React/blob/main/src/images/fuud2.png?raw=true",
   },
   {
     project: "Fuud.",
-    label: "Bali, Indonesia",
+    label: "Pantry page with the option for barcode scanner",
     imgPath:
       "https://github.com/MSalim16/MSPortfolio-React/blob/main/src/images/fuud3.png?raw=true",
   },
   {
     project: "Fuud.",
-    label: "Goč, Serbia",
+    label: "Waste page with all the wasted food",
     imgPath:
       "https://github.com/MSalim16/MSPortfolio-React/blob/main/src/images/fuud4.png?raw=true",
   },
