@@ -26,7 +26,7 @@ import "aos/dist/aos.css";
 import Lottie from "lottie-web";
 
 const myface =
-  "https://raw.githubusercontent.com/MSalim16/MSPortfolio-React/main/src/images/MSALIMPICTURE%20WORK.jpeg";
+  "https://github.com/MSalim16/MSPortfolio-React/blob/main/src/images/pfp.png?raw=true";
 
 function HomePage() {
   const ref = useRef(null);
