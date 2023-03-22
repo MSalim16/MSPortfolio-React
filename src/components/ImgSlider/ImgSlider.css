@@ -1,0 +1,19 @@
+html {
+  overflow-x: hidden;
+  overflow: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: "SF UI Text", "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu",
+    "Cantarell", "Open Sans", sans-serif;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.fuuddesc {
+  color: #1b6bff;
+  font-family: "SFUITEXT";
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}

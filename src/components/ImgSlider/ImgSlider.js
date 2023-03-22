@@ -60,7 +60,13 @@ function ImgSlider() {
 
   return (
     <Box
-      sx={{ maxHeight: 500, maxWidth: 225, flexGrow: 1, marginLeft: "2rem" }}
+      sx={{
+        maxHeight: 500,
+        maxWidth: 225,
+        flexGrow: 1,
+        marginLeft: "2rem",
+        borderRadius: "2rem",
+      }}
     >
       <Typography
         style={{
@@ -71,27 +77,13 @@ function ImgSlider() {
       >
         {images[activeStep].project}
       </Typography>
-      <Paper
-        square
-        elevation={0}
-        sx={{
-          display: "flex",
-          alignItems: "center",
-          height: 50,
-          pl: 2,
-          bgcolor: "background.default",
-        }}
-      >
-        <Typography
-          style={{
-            color: "#1b6bff",
-            fontFamily: "PaulGrotesk",
-            marginLeft: "-1rem",
-          }}
-        >
-          {images[activeStep].label}
-        </Typography>
-      </Paper>
+
+      <p className="fuuddesc">
+        Collaborated in developing a meal planning app with barcode scanning and
+        recipe suggestion features. Contributed to the project's success through
+        effective teamwork and honed skills in mobile development, database
+        management, and user experience.
+      </p>
       <AutoPlaySwipeableViews
         axis={theme.direction === "rtl" ? "x-reverse" : "x"}
         index={activeStep}
@@ -117,6 +109,15 @@ function ImgSlider() {
           </div>
         ))}
       </AutoPlaySwipeableViews>
+      <Typography
+        style={{
+          color: "#1b6bff",
+          fontFamily: "PaulGrotesk",
+          marginTop: "1rem",
+        }}
+      >
+        {images[activeStep].label}
+      </Typography>
       <MobileStepper
         steps={maxSteps}
         position="static"
