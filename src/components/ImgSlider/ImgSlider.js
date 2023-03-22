@@ -16,24 +16,28 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
   {
+    project: "Fuud.",
     label: "Login Page with Firebase Auth",
     imgPath:
-      "https://github.com/MSalim16/MSPortfolio-React/blob/main/src/images/fuud1.jpg?raw=true",
+      "https://github.com/MSalim16/MSPortfolio-React/blob/main/src/images/fuud1.png?raw=true",
   },
   {
+    project: "Fuud.",
     label: "Landing Page with Pantry and Waste",
     imgPath:
-      "https://github.com/MSalim16/MSPortfolio-React/blob/main/src/images/fuud2.jpg?raw=true",
+      "https://github.com/MSalim16/MSPortfolio-React/blob/main/src/images/fuud2.png?raw=true",
   },
   {
+    project: "Fuud.",
     label: "Bali, Indonesia",
     imgPath:
-      "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250",
+      "https://github.com/MSalim16/MSPortfolio-React/blob/main/src/images/fuud3.png?raw=true",
   },
   {
+    project: "Fuud.",
     label: "Goč, Serbia",
     imgPath:
-      "https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60",
+      "https://github.com/MSalim16/MSPortfolio-React/blob/main/src/images/fuud4.png?raw=true",
   },
 ];
 
@@ -55,7 +59,18 @@ function ImgSlider() {
   };
 
   return (
-    <Box sx={{ maxHeight: 600, maxWidth: 300, flexGrow: 1 }}>
+    <Box
+      sx={{ maxHeight: 500, maxWidth: 225, flexGrow: 1, marginLeft: "2rem" }}
+    >
+      <Typography
+        style={{
+          color: "#1b6bff",
+          fontFamily: "PaulGrotesk",
+          fontSize: "40px",
+        }}
+      >
+        {images[activeStep].project}
+      </Typography>
       <Paper
         square
         elevation={0}
@@ -67,7 +82,13 @@ function ImgSlider() {
           bgcolor: "background.default",
         }}
       >
-        <Typography style={{ color: "#1b6bff", fontFamily: "PaulGrotesk" }}>
+        <Typography
+          style={{
+            color: "#1b6bff",
+            fontFamily: "PaulGrotesk",
+            marginLeft: "-1rem",
+          }}
+        >
           {images[activeStep].label}
         </Typography>
       </Paper>
