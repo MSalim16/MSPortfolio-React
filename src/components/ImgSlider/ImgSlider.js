@@ -59,93 +59,102 @@ function ImgSlider() {
   };
 
   return (
-    <Box
-      sx={{
-        maxHeight: 500,
-        maxWidth: 225,
-        flexGrow: 1,
-        marginLeft: "2rem",
-        borderRadius: "2rem",
-      }}
-    >
-      <Typography
-        style={{
-          color: "#1b6bff",
-          fontFamily: "PaulGrotesk",
-          fontSize: "40px",
-        }}
-      >
-        {images[activeStep].project}
-      </Typography>
-
-      <p className="fuuddesc">
-        Collaborated in developing a meal planning app with barcode scanning and
-        recipe suggestion features. Contributed to the project's success through
-        effective teamwork and honed skills in mobile development, database
-        management, and user experience.
-      </p>
-      <AutoPlaySwipeableViews
-        axis={theme.direction === "rtl" ? "x-reverse" : "x"}
-        index={activeStep}
-        onChangeIndex={handleStepChange}
-        enableMouseEvents
-      >
-        {images.map((step, index) => (
-          <div key={step.label}>
-            {Math.abs(activeStep - index) <= 2 ? (
-              <Box
-                component="img"
-                sx={{
-                  height: 500,
-                  display: "block",
-                  maxWidth: 225,
-                  overflow: "hidden",
-                  width: "100%",
-                }}
-                src={step.imgPath}
-                alt={step.label}
-              />
-            ) : null}
-          </div>
-        ))}
-      </AutoPlaySwipeableViews>
-      <Typography
-        style={{
-          color: "#1b6bff",
-          fontFamily: "PaulGrotesk",
-          marginTop: "1rem",
-        }}
-      >
-        {images[activeStep].label}
-      </Typography>
-      <MobileStepper
-        steps={maxSteps}
-        position="static"
-        activeStep={activeStep}
-        nextButton={
-          <Button
-            size="small"
-            onClick={handleNext}
-            disabled={activeStep === maxSteps - 1}
+    <div className="slideshowBorder">
+      <div className="slideshowContents">
+        <Box
+          sx={{
+            maxHeight: 500,
+            maxWidth: 225,
+            flexGrow: 1,
+            marginLeft: "2rem",
+            borderRadius: "2rem",
+          }}
+        >
+          <Typography
+            style={{
+              color: "#1b6bff",
+              fontFamily: "PaulGrotesk",
+              fontSize: "40px",
+            }}
           >
-            {theme.direction === "rtl" ? (
-              <KeyboardArrowLeft />
-            ) : (
-              <KeyboardArrowRight />
-            )}
-          </Button>
-        }
-        backButton={
-          <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
-            {theme.direction === "rtl" ? (
-              <KeyboardArrowRight />
-            ) : (
-              <KeyboardArrowLeft />
-            )}
-          </Button>
-        }
-      />
-    </Box>
+            {images[activeStep].project}
+          </Typography>
+
+          <p className="fuuddesc">
+            Collaborated in developing a meal planning app with barcode scanning
+            and recipe suggestion features. Contributed to the project's success
+            through effective teamwork and honed skills in mobile development,
+            database management, and user experience.
+          </p>
+          <AutoPlaySwipeableViews
+            axis={theme.direction === "rtl" ? "x-reverse" : "x"}
+            index={activeStep}
+            onChangeIndex={handleStepChange}
+            enableMouseEvents
+          >
+            {images.map((step, index) => (
+              <div key={step.label}>
+                {Math.abs(activeStep - index) <= 2 ? (
+                  <Box
+                    component="img"
+                    sx={{
+                      height: 500,
+                      display: "block",
+                      maxWidth: 225,
+                      overflow: "hidden",
+                      width: "100%",
+                    }}
+                    src={step.imgPath}
+                    alt={step.label}
+                  />
+                ) : null}
+              </div>
+            ))}
+          </AutoPlaySwipeableViews>
+          <Typography
+            style={{
+              color: "#1b6bff",
+              fontFamily: "PaulGrotesk",
+              marginTop: "1rem",
+              fontSize: "15px",
+            }}
+          >
+            {images[activeStep].label}
+          </Typography>
+          <MobileStepper
+            steps={maxSteps}
+            position="static"
+            activeStep={activeStep}
+            nextButton={
+              <Button
+                size="small"
+                onClick={handleNext}
+                disabled={activeStep === maxSteps - 1}
+              >
+                {theme.direction === "rtl" ? (
+                  <KeyboardArrowLeft />
+                ) : (
+                  <KeyboardArrowRight />
+                )}
+              </Button>
+            }
+            backButton={
+              <Button
+                size="small"
+                onClick={handleBack}
+                disabled={activeStep === 0}
+              >
+                {theme.direction === "rtl" ? (
+                  <KeyboardArrowRight />
+                ) : (
+                  <KeyboardArrowLeft />
+                )}
+              </Button>
+            }
+          />
+        </Box>
+      </div>
+    </div>
   );
 }
 
