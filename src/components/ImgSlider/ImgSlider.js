@@ -1,10 +1,25 @@
 import "../ImgSlider/ImgSlider.css";
 
+import HTML from "../../images/html.png";
+import CSS from "../../images/css.png";
+import JAVASCRIPT from "../../images/javascript.png";
+import REACT from "../../images/react.png";
+import Node from "../../images/node.png";
+import FireBase from "../../images/firebase.png";
+import GitHub from "../../images/github.png";
+import Postgresql from "../../images/postgresql.png";
+import Mongo from "../../images/mongo.png";
+import TypeScript from "../../images/typescript.png";
+import JEST from "../../images/jest.png";
+import EXPRESS from "../../images/express.png";
+import VSCODE from "../../images/vscode.png";
+import AGILE from "../../images/agile.png";
+import TDD from "../../images/tdd.png";
+
 import * as React from "react";
 import { useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import MobileStepper from "@mui/material/MobileStepper";
-import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
@@ -14,7 +29,7 @@ import { autoPlay } from "react-swipeable-views-utils";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
-const images = [
+const fuudimages = [
   {
     project: "Fuud.",
     label: "Login page with create account / reset password features",
@@ -44,7 +59,7 @@ const images = [
 function ImgSlider() {
   const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState(0);
-  const maxSteps = images.length;
+  const maxSteps = fuudimages.length;
 
   const handleNext = () => {
     setActiveStep(prevActiveStep => prevActiveStep + 1);
@@ -74,25 +89,59 @@ function ImgSlider() {
             style={{
               color: "#1b6bff",
               fontFamily: "PaulGrotesk",
-              fontSize: "40px",
+              fontSize: "35px",
             }}
           >
-            {images[activeStep].project}
+            {fuudimages[activeStep].project}
           </Typography>
 
           <p className="fuuddesc">
-            Collaborated in developing a meal planning app with barcode scanning
-            and recipe suggestion features. Contributed to the project's success
-            through effective teamwork and honed skills in mobile development,
-            database management, and user experience.
+            Collaborated on a meal planning app with barcode scanning and recipe
+            suggestions, showcasing skills in mobile dev, DB management, and UX.
+            Contributed to success through teamwork, resulting in a
+            comprehensive and useful app.
           </p>
+
+          <p className="skillsused">Tech Stack</p>
+          <div className="projectskills">
+            <div className="projectskills-container">
+              <div className="boxes">
+                <img className="skillimg" src={CSS} alt="CSS icon" />
+                <p className="skillname">CSS</p>
+              </div>
+
+              <div className="boxes">
+                <img className="skillimg" src={FireBase} alt="FIREBASE icon" />
+                <p className="skillname">FIREBASE</p>
+              </div>
+
+              <div className="boxes">
+                <img
+                  className="skillimg"
+                  src={TypeScript}
+                  alt="TYPESCRIPT icon"
+                />
+                <p className="skillname">TYPESCRIPT</p>
+              </div>
+              <div className="boxes">
+                <img className="skillimg" src={JEST} alt="JEST icon" />
+                <p className="skillname">JEST</p>
+              </div>
+
+              <div className="boxes">
+                <img className="skillimg" src={REACT} alt="REACT NATIVE icon" />
+                <p className="reactnativeskill">REACT NATIVE</p>
+              </div>
+            </div>
+          </div>
+
           <AutoPlaySwipeableViews
             axis={theme.direction === "rtl" ? "x-reverse" : "x"}
             index={activeStep}
             onChangeIndex={handleStepChange}
             enableMouseEvents
           >
-            {images.map((step, index) => (
+            {fuudimages.map((step, index) => (
               <div key={step.label}>
                 {Math.abs(activeStep - index) <= 2 ? (
                   <Box
@@ -116,10 +165,10 @@ function ImgSlider() {
               color: "#1b6bff",
               fontFamily: "PaulGrotesk",
               marginTop: "1rem",
-              fontSize: "15px",
+              fontSize: "13px",
             }}
           >
-            {images[activeStep].label}
+            {fuudimages[activeStep].label}
           </Typography>
           <MobileStepper
             steps={maxSteps}

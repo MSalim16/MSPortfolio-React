@@ -76,7 +76,7 @@ p {
   border-width: 5px;
   border-image-slice: 1;
   border-width: 7px;
-  border-image-source: linear-gradient(to right, #333 50%, #1b6bff);
+  border-image-source: linear-gradient(to right, #333333 50%, #1b6bff);
 }
 
 .skills {

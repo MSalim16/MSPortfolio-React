@@ -13,19 +13,20 @@ html {
 .fuuddesc {
   color: #1b6bff;
   font-family: "SFUITEXT";
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 500;
-  margin-bottom: 1rem;
 }
 
 .slideshowBorder {
+  background-color: white;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   border-radius: 1rem;
-  height: 50rem;
+  height: 54rem;
   width: 18rem;
   margin-top: 3rem;
   margin-left: 2rem;
+  border-radius: 3rem;
 }
 
 .slideshowContents {
@@ -33,4 +34,53 @@ html {
   flex-direction: column;
   align-items: center;
   padding-right: 2rem;
+}
+
+.skillsused {
+  font-family: "PaulGrotesk";
+  color: #1b6bff;
+  margin-bottom: 0.5rem;
+}
+
+.boxes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  width: 3rem;
+  height: 3rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border-radius: 1rem;
+}
+
+.skillimg {
+  width: 1.25rem;
+  margin-top: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skillname {
+  color: #1b6bff;
+  margin-bottom: 1rem;
+  font-size: 8px;
+}
+
+.reactnativeskill {
+  color: #1b6bff;
+  margin-bottom: 1rem;
+  font-size: 7px;
+}
+
+.boxes:hover {
+  scale: 110%;
+}
+
+.projectskills-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 3px;
+  grid-row-gap: 0px;
+  margin-bottom: 1rem;
 }
