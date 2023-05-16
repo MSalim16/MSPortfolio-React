@@ -4,7 +4,7 @@ import HTML from "../../images/html.png";
 import CSS from "../../images/css.png";
 import JAVASCRIPT from "../../images/javascript.png";
 import REACT from "../../images/react.png";
-import Node from "../../images/node.png";
+import NODE from "../../images/node.png";
 import FireBase from "../../images/firebase.png";
 import Postgresql from "../../images/postgresql.png";
 import Mongo from "../../images/mongo.png";
@@ -26,37 +26,49 @@ import { autoPlay } from "react-swipeable-views-utils";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
-const fuudimages = [
+const twitimages = [
   {
-    project: "Fuud.",
+    project: "Blue Bird Reviews",
     label: "Login page with create account / reset password features",
     imgPath:
-      "https://github.com/MSalim16/MSPortfolio-React/blob/main/src/images/fuud1.png?raw=true",
+      "https://github.com/MSalim16/MSPortfolio-React/blob/main/src/images/Twit1.jpg?raw=true",
   },
   {
-    project: "Fuud.",
+    project: "Blue Bird Reviews",
     label: "Landing page with pantry and waste",
     imgPath:
-      "https://github.com/MSalim16/MSPortfolio-React/blob/main/src/images/fuud2.png?raw=true",
+      "https://github.com/MSalim16/MSPortfolio-React/blob/main/src/images/Twit2.jpg?raw=true",
   },
   {
-    project: "Fuud.",
+    project: "Blue Bird Reviews",
     label: "Pantry page with the option for barcode scanner",
     imgPath:
-      "https://github.com/MSalim16/MSPortfolio-React/blob/main/src/images/fuud3.png?raw=true",
+      "https://github.com/MSalim16/MSPortfolio-React/blob/main/src/images/twit3.jpg?raw=true",
   },
   {
-    project: "Fuud.",
+    project: "Blue Bird Reviews",
     label: "Waste page with all the wasted food",
     imgPath:
-      "https://github.com/MSalim16/MSPortfolio-React/blob/main/src/images/fuud4.png?raw=true",
+      "https://github.com/MSalim16/MSPortfolio-React/blob/main/src/images/twit4.jpg?raw=true",
+  },
+  {
+    project: "Blue Bird Reviews",
+    label: "Waste page with all the wasted food",
+    imgPath:
+      "https://github.com/MSalim16/MSPortfolio-React/blob/main/src/images/twit5.jpg?raw=true",
+  },
+  {
+    project: "Blue Bird Reviews",
+    label: "Waste page with all the wasted food",
+    imgPath:
+      "https://github.com/MSalim16/MSPortfolio-React/blob/main/src/images/twit6.jpg?raw=true",
   },
 ];
 
-function ImgSlider() {
+function TwitSlider() {
   const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState(0);
-  const maxSteps = fuudimages.length;
+  const maxSteps = twitimages.length;
 
   const handleNext = () => {
     setActiveStep(prevActiveStep => prevActiveStep + 1);
@@ -86,10 +98,10 @@ function ImgSlider() {
             style={{
               color: "#1b6bff",
               fontFamily: "PaulGrotesk",
-              fontSize: "35px",
+              fontSize: "26px",
             }}
           >
-            {fuudimages[activeStep].project}
+            {twitimages[activeStep].project}
           </Typography>
 
           <p className="fuuddesc">
@@ -108,26 +120,34 @@ function ImgSlider() {
               </div>
 
               <div className="boxes">
-                <img className="skillimg" src={FireBase} alt="FIREBASE icon" />
-                <p className="skillname">FIREBASE</p>
+                <img className="skillimg" src={EXPRESS} alt="FIREBASE icon" />
+                <p className="skillname">EXPRESS</p>
+              </div>
+              <div className="boxes">
+                <img
+                  className="skillimg"
+                  src={Postgresql}
+                  alt="FIREBASE icon"
+                />
+                <p className="skillname">POSTGRESQL</p>
               </div>
 
               <div className="boxes">
                 <img
                   className="skillimg"
-                  src={TypeScript}
+                  src={JAVASCRIPT}
                   alt="TYPESCRIPT icon"
                 />
-                <p className="skillname">TYPESCRIPT</p>
-              </div>
-              <div className="boxes">
-                <img className="skillimg" src={JEST} alt="JEST icon" />
-                <p className="skillname">JEST</p>
+                <p className="skillname">JAVASCRIPT</p>
               </div>
 
               <div className="boxes">
                 <img className="skillimg" src={REACT} alt="REACT NATIVE icon" />
-                <p className="reactnativeskill">REACT NATIVE</p>
+                <p className="reactnativeskill">REACT </p>
+              </div>
+              <div className="boxes">
+                <img className="skillimg" src={NODE} alt="REACT NATIVE icon" />
+                <p className="reactnativeskill">NODE </p>
               </div>
             </div>
           </div>
@@ -138,7 +158,7 @@ function ImgSlider() {
             onChangeIndex={handleStepChange}
             enableMouseEvents
           >
-            {fuudimages.map((step, index) => (
+            {twitimages.map((step, index) => (
               <div key={step.label}>
                 {Math.abs(activeStep - index) <= 2 ? (
                   <Box
@@ -162,10 +182,10 @@ function ImgSlider() {
               color: "#1b6bff",
               fontFamily: "PaulGrotesk",
               marginTop: "1rem",
-              fontSize: "13px",
+              fontSize: "10px",
             }}
           >
-            {fuudimages[activeStep].label}
+            {twitimages[activeStep].label}
           </Typography>
           <MobileStepper
             steps={maxSteps}
@@ -198,10 +218,21 @@ function ImgSlider() {
               </Button>
             }
           />
+          <div className="Buttons">
+            <a
+              target="blank"
+              href="https://github.com/MSalim16/ms-bluebirdreviews-frontend"
+            >
+              <button className="GitHubLink"> GITHUB </button>
+            </a>
+            <a target="blank" href="https://msbluebirdreviews.netlify.app/">
+              <button className="HostedLink"> Hosted Link </button>
+            </a>
+          </div>
         </Box>
       </div>
     </div>
   );
 }
 
-export default ImgSlider;
+export default TwitSlider;

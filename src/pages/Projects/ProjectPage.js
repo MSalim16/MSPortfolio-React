@@ -1,5 +1,6 @@
 import React from "react";
-import ImgSlider from "../../components/ImgSlider/ImgSlider";
+import ImgSlider from "../../components/ImgSlider/FuudSlider";
+import TwitSlider from "../../components/ImgSlider/TwitSlider";
 import Footer from "../../components/Footer/Footer";
 
 import "../Projects/projects.css";
@@ -10,6 +11,7 @@ const ProjectPage = () => {
       <div className="project-page" style={{ color: "black" }}>
         <section>
           <ImgSlider />
+          <TwitSlider />
         </section>
         <section>
           <Footer />
