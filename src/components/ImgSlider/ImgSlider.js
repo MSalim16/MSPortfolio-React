@@ -6,14 +6,11 @@ import JAVASCRIPT from "../../images/javascript.png";
 import REACT from "../../images/react.png";
 import Node from "../../images/node.png";
 import FireBase from "../../images/firebase.png";
-import GitHub from "../../images/github.png";
 import Postgresql from "../../images/postgresql.png";
 import Mongo from "../../images/mongo.png";
 import TypeScript from "../../images/typescript.png";
 import JEST from "../../images/jest.png";
 import EXPRESS from "../../images/express.png";
-import VSCODE from "../../images/vscode.png";
-import AGILE from "../../images/agile.png";
 import TDD from "../../images/tdd.png";
 
 import * as React from "react";
