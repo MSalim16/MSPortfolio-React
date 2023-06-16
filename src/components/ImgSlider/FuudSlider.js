@@ -1,17 +1,10 @@
 import "../ImgSlider/ImgSlider.css";
 
-import HTML from "../../images/html.png";
 import CSS from "../../images/css.png";
-import JAVASCRIPT from "../../images/javascript.png";
 import REACT from "../../images/react.png";
-import Node from "../../images/node.png";
 import FireBase from "../../images/firebase.png";
-import Postgresql from "../../images/postgresql.png";
-import Mongo from "../../images/mongo.png";
 import TypeScript from "../../images/typescript.png";
 import JEST from "../../images/jest.png";
-import EXPRESS from "../../images/express.png";
-import TDD from "../../images/tdd.png";
 
 import * as React from "react";
 import { useTheme } from "@mui/material/styles";
@@ -29,7 +22,7 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 const fuudimages = [
   {
     project: "Fuud.",
-    label: "Login page with create account / reset password features",
+    label: "Login page with create / forgot password",
     imgPath:
       "https://github.com/MSalim16/MSPortfolio-React/blob/main/src/images/fuud1.png?raw=true",
   },
@@ -41,7 +34,7 @@ const fuudimages = [
   },
   {
     project: "Fuud.",
-    label: "Pantry page with the option for barcode scanner",
+    label: "Pantry page with barcode scanner",
     imgPath:
       "https://github.com/MSalim16/MSPortfolio-React/blob/main/src/images/fuud3.png?raw=true",
   },
@@ -86,7 +79,7 @@ function FuudSlider() {
             style={{
               color: "#1b6bff",
               fontFamily: "PaulGrotesk",
-              fontSize: "25px",
+              fontSize: "23px",
             }}
           >
             {fuudimages[activeStep].project}

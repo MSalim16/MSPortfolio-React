@@ -3,15 +3,6 @@ import "../ImgSlider/ImgSlider.css";
 import HTML from "../../images/html.png";
 import CSS from "../../images/css.png";
 import JAVASCRIPT from "../../images/javascript.png";
-import REACT from "../../images/react.png";
-import Node from "../../images/node.png";
-import FireBase from "../../images/firebase.png";
-import Postgresql from "../../images/postgresql.png";
-import Mongo from "../../images/mongo.png";
-import TypeScript from "../../images/typescript.png";
-import JEST from "../../images/jest.png";
-import EXPRESS from "../../images/express.png";
-import TDD from "../../images/tdd.png";
 
 import * as React from "react";
 import { useTheme } from "@mui/material/styles";
@@ -28,28 +19,28 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const fuudimages = [
   {
-    project: "Fuud.",
+    project: "Noughts & Crosses",
     label: "Login page with create account / reset password features",
     imgPath:
-      "https://github.com/MSalim16/MSPortfolio-React/blob/main/src/images/fuud1.png?raw=true",
+      "https://github.com/MSalim16/MSPortfolio-React/blob/main/src/images/noughts1.png?raw=true",
   },
   {
-    project: "Fuud.",
+    project: "Noughts & Crosses",
     label: "Landing page with pantry and waste",
     imgPath:
-      "https://github.com/MSalim16/MSPortfolio-React/blob/main/src/images/fuud2.png?raw=true",
+      "https://github.com/MSalim16/MSPortfolio-React/blob/main/src/images/noughts2.png?raw=true",
   },
   {
-    project: "Fuud.",
+    project: "Noughts & Crosses",
     label: "Pantry page with the option for barcode scanner",
     imgPath:
-      "https://github.com/MSalim16/MSPortfolio-React/blob/main/src/images/fuud3.png?raw=true",
+      "https://github.com/MSalim16/MSPortfolio-React/blob/main/src/images/noughts3.png?raw=true",
   },
   {
-    project: "Fuud.",
+    project: "Noughts & Crosses",
     label: "Waste page with all the wasted food",
     imgPath:
-      "https://github.com/MSalim16/MSPortfolio-React/blob/main/src/images/fuud4.png?raw=true",
+      "https://github.com/MSalim16/MSPortfolio-React/blob/main/src/images/noughts4.png?raw=true",
   },
 ];
 
@@ -86,7 +77,7 @@ function FuudSlider() {
             style={{
               color: "#1b6bff",
               fontFamily: "PaulGrotesk",
-              fontSize: "25px",
+              fontSize: "23px",
             }}
           >
             {fuudimages[activeStep].project}
@@ -103,31 +94,21 @@ function FuudSlider() {
           <div className="projectskills">
             <div className="projectskills-container">
               <div className="boxes">
+                <img className="skillimg" src={HTML} alt="HTML icon" />
+                <p className="skillname">HTML</p>
+              </div>
+
+              <div className="boxes">
                 <img className="skillimg" src={CSS} alt="CSS icon" />
                 <p className="skillname">CSS</p>
               </div>
-
-              <div className="boxes">
-                <img className="skillimg" src={FireBase} alt="FIREBASE icon" />
-                <p className="skillname">FIREBASE</p>
-              </div>
-
               <div className="boxes">
                 <img
                   className="skillimg"
-                  src={TypeScript}
-                  alt="TYPESCRIPT icon"
+                  src={JAVASCRIPT}
+                  alt="JAVASCRIPT icon"
                 />
-                <p className="skillname">TYPESCRIPT</p>
-              </div>
-              <div className="boxes">
-                <img className="skillimg" src={JEST} alt="JEST icon" />
-                <p className="skillname">JEST</p>
-              </div>
-
-              <div className="boxes">
-                <img className="skillimg" src={REACT} alt="REACT NATIVE icon" />
-                <p className="reactnativeskill">REACT NATIVE</p>
+                <p className="skillname">JAVASCRIPT</p>
               </div>
             </div>
           </div>
@@ -199,8 +180,17 @@ function FuudSlider() {
             }
           />
           <div className="Buttons">
-            <a target="blank" href="https://github.com/MSalim16/fuud">
+            <a
+              target="blank"
+              href="https://github.com/MSalim16/noughts-and-crosses-frontend"
+            >
               <button className="GitHubLink"> GITHUB </button>
+            </a>
+            <a
+              target="blank"
+              href="https://msalim16.github.io/noughts-and-crosses-frontend/"
+            >
+              <button className="HostedLink"> Hosted Link </button>
             </a>
           </div>
         </Box>

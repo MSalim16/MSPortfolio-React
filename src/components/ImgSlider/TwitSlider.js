@@ -1,17 +1,11 @@
 import "../ImgSlider/ImgSlider.css";
 
-import HTML from "../../images/html.png";
 import CSS from "../../images/css.png";
 import JAVASCRIPT from "../../images/javascript.png";
 import REACT from "../../images/react.png";
 import NODE from "../../images/node.png";
-import FireBase from "../../images/firebase.png";
 import Postgresql from "../../images/postgresql.png";
-import Mongo from "../../images/mongo.png";
-import TypeScript from "../../images/typescript.png";
-import JEST from "../../images/jest.png";
 import EXPRESS from "../../images/express.png";
-import TDD from "../../images/tdd.png";
 
 import * as React from "react";
 import { useTheme } from "@mui/material/styles";
@@ -26,40 +20,41 @@ import { autoPlay } from "react-swipeable-views-utils";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
-const twitimages = [
+const twitImages = [
   {
     project: "Blue Bird Reviews",
-    label: "Login page with create account / reset password features",
+    label: "Homepage displays reviews with sortable date order",
     imgPath:
       "https://github.com/MSalim16/MSPortfolio-React/blob/main/src/images/Twit1.jpg?raw=true",
   },
   {
     project: "Blue Bird Reviews",
-    label: "Landing page with pantry and waste",
+    label: "Sortable reviews by votes, date, owner, and title",
     imgPath:
       "https://github.com/MSalim16/MSPortfolio-React/blob/main/src/images/Twit2.jpg?raw=true",
   },
   {
     project: "Blue Bird Reviews",
-    label: "Pantry page with the option for barcode scanner",
+    label: "Login page with all users",
     imgPath:
       "https://github.com/MSalim16/MSPortfolio-React/blob/main/src/images/twit3.jpg?raw=true",
   },
   {
     project: "Blue Bird Reviews",
-    label: "Waste page with all the wasted food",
+    label: "Sort reviews by the review category",
     imgPath:
       "https://github.com/MSalim16/MSPortfolio-React/blob/main/src/images/twit4.jpg?raw=true",
   },
   {
     project: "Blue Bird Reviews",
-    label: "Waste page with all the wasted food",
+    label:
+      "Individual review page with the option to upvote or downvote a post",
     imgPath:
       "https://github.com/MSalim16/MSPortfolio-React/blob/main/src/images/twit5.jpg?raw=true",
   },
   {
     project: "Blue Bird Reviews",
-    label: "Waste page with all the wasted food",
+    label: "Option to comment on reivews and also delete comments",
     imgPath:
       "https://github.com/MSalim16/MSPortfolio-React/blob/main/src/images/twit6.jpg?raw=true",
   },
@@ -68,7 +63,7 @@ const twitimages = [
 function TwitSlider() {
   const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState(0);
-  const maxSteps = twitimages.length;
+  const maxSteps = twitImages.length;
 
   const handleNext = () => {
     setActiveStep(prevActiveStep => prevActiveStep + 1);
@@ -98,17 +93,17 @@ function TwitSlider() {
             style={{
               color: "#1b6bff",
               fontFamily: "PaulGrotesk",
-              fontSize: "26px",
+              fontSize: "23px",
             }}
           >
-            {twitimages[activeStep].project}
+            {twitImages[activeStep].project}
           </Typography>
 
           <p className="fuuddesc">
-            Collaborated on a meal planning app with barcode scanning and recipe
-            suggestions, showcasing skills in mobile dev, DB management, and UX.
-            Contributed to success through teamwork, resulting in a
-            comprehensive and useful app.
+            Developed a Render-hosted API as the sole developer, delivering
+            game-related data (reviews, categories, comments, and users).
+            Utilized Github, Kanban boards, MVC pattern, and TDD for efficient
+            project management, structured development, and bug identification.
           </p>
 
           <p className="skillsused">Tech Stack</p>
@@ -158,7 +153,7 @@ function TwitSlider() {
             onChangeIndex={handleStepChange}
             enableMouseEvents
           >
-            {twitimages.map((step, index) => (
+            {twitImages.map((step, index) => (
               <div key={step.label}>
                 {Math.abs(activeStep - index) <= 2 ? (
                   <Box
@@ -185,7 +180,7 @@ function TwitSlider() {
               fontSize: "10px",
             }}
           >
-            {twitimages[activeStep].label}
+            {twitImages[activeStep].label}
           </Typography>
           <MobileStepper
             steps={maxSteps}
